@@ -29,6 +29,13 @@ button {
   margin-right: auto;
 }
 
+.W1500 {
+  width: 100%;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .f_TC {
   font-family: "Noto Serif TC", serif;
 }
@@ -194,6 +201,7 @@ button {
 .title {
   border-bottom: 4px solid #000;
   padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .title h5 {
@@ -203,6 +211,7 @@ button {
 
 .title h6 {
   color: #808080;
+  font-family: "Noto Serif TC", serif;
 }
 
 .more_btn {
@@ -221,6 +230,21 @@ button {
 
 .see {
   padding-left: 20px;
+  background-size: 14px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.see.white {
+  background-image: url(../images/icon-eye-white.png);
+}
+
+.see.grey {
+  background-image: url(../images/icon-eye-grey.png);
+}
+
+.item {
+  margin-bottom: 30px;
 }
 
 .item .img_wrapper {
@@ -236,18 +260,18 @@ button {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 60px 30px 30px;
+  padding: 60px 35px 30px;
   background: black;
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(40%, black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, black, black 40%, rgba(0, 0, 0, 0));
 }
 
-.item .img_wrapper .poA .see {
-  float: right;
-}
-
 .item .img_wrapper .poA h6 {
   margin-top: 6px;
+}
+
+.item .see {
+  float: right;
 }
 
 .item h6 {
@@ -256,6 +280,71 @@ button {
 
 .item p {
   line-height: 1.7;
+}
+
+.item .line2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.item .line3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+
+.item.txt_out h6 {
+  margin-top: 8px;
+}
+
+.item.detail_show h6 {
+  padding-right: 80px;
+  position: relative;
+}
+
+.item.detail_show .see {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.item.detail_show .detail {
+  border-top: 2px solid #000;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+.item.detail_show .detail .tr {
+  margin-bottom: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.item.detail_show .detail .th {
+  font-family: "Noto Serif TC", serif;
+  font-weight: bold;
+  width: 68px;
+  position: relative;
+}
+
+.item.detail_show .detail .th:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 4px;
+  right: 0;
+  height: 15px;
+  width: 1px;
+  background-color: black;
+}
+
+.item.detail_show .detail .td {
+  padding-left: 10px;
+  color: #666666;
 }
 
 #header {
@@ -267,6 +356,7 @@ button {
 
 #header .W1200 {
   margin: 0 auto;
+  padding: 17px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -285,37 +375,78 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#header .W1200 .menu_btn {
-  display: none;
-  background-image: url(../images/btn-menu.png);
-  width: 40px;
-  height: 25px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  right: 40px;
-  top: 15px;
+#header .W1200 .nav a {
+  height: 32px;
+  padding: 5px;
   cursor: pointer;
 }
 
-@media screen and (max-width: 999px) {
-  #header .W1200 .menu_btn {
-    display: block;
-  }
+#header .W1200 .nav a img {
+  height: 100%;
 }
 
-@media screen and (max-width: 599px) {
-  #header .W1200 .menu_btn {
-    right: 20px;
-  }
+#header .W1200 .nav label {
+  cursor: pointer;
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+#header .W1200 .menu-open-button .hamburger {
+  width: 25px;
+  height: 1px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+#header .W1200 .menu-open-button .hamburger.hamburger-1 {
+  -webkit-transform: translate3d(0, -8px, 0);
+          transform: translate3d(0, -8px, 0);
+}
+
+#header .W1200 .menu-open-button .hamburger.hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#header .W1200 .menu-open-button .hamburger.hamburger-3 {
+  -webkit-transform: translate3d(0, 8px, 0);
+          transform: translate3d(0, 8px, 0);
+}
+
+#header .W1200 .menu-open-button.active .hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+#header .W1200 .menu-open-button.active .hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+          transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+#header .W1200 .menu-open-button.active .hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+          transform: translate3d(0, 0, 0) rotate(-45deg);
 }
 
 #footer {
   background-color: #000;
-  padding: 50px 30px 0;
+  padding: 50px 30px;
 }
 
 #footer .footer_detail {
@@ -341,7 +472,11 @@ button {
   width: calc(33% - 20px);
   margin-bottom: 45px;
   line-height: 1.8;
-  padding-left: 25px;
+  padding-left: 28px;
+  background-image: url(../images/icon-arrow.png);
+  background-repeat: no-repeat;
+  background-position: left top 10px;
+  background-size: 18px;
 }
 
 #footer span {
@@ -353,13 +488,29 @@ button {
   line-height: 1.8;
 }
 
-#footer a {
+#footer .d_flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .d_flex a {
   height: 33px;
   display: inline-block;
+  margin: 0 11px;
+}
+
+#footer .d_flex a img {
+  height: 100%;
 }
 
 .wrapper {
-  padding: 40px;
+  padding-top: 40px;
+}
+
+.wrapper > div {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 #tab {
@@ -372,6 +523,16 @@ button {
   padding: 16px 10px;
   line-height: 1.5;
   border-right: 2px solid #000;
+  cursor: pointer;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+#tab li:not(.active):hover {
+  opacity: .6;
 }
 
 #tab li:last-child {
@@ -402,6 +563,20 @@ button {
   width: 170px;
   color: #fff;
   background-color: #000;
+  cursor: pointer;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+#search input[type="button"]:hover {
+  background-color: #444;
+}
+
+#features {
+  padding-bottom: 40px;
 }
 
 #features > .d_flex {
@@ -411,7 +586,7 @@ button {
 }
 
 #features > .d_flex .sec_left {
-  width: calc(40% - 18px);
+  width: calc(42% - 18px);
 }
 
 #features > .d_flex .sec_left .continue {
@@ -419,11 +594,77 @@ button {
   padding-bottom: 8px;
   border-bottom: 2px solid #44bbc1;
   float: right;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
-#features > .d_flex .sec_center,
+#features > .d_flex .sec_center {
+  width: calc(31% - 18px);
+}
+
 #features > .d_flex .sec_right {
-  width: calc(35% - 18px);
+  width: calc(27% - 18px);
+}
+
+#features > .d_flex .sec_right .item {
+  margin-bottom: 45px;
+}
+
+#news {
+  background-color: #f1f1f1;
+  padding: 40px;
+}
+
+#news .d_flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#news .d_flex .item {
+  width: calc(33% - 18px);
+}
+
+#event {
+  padding: 40px;
+}
+
+#event .W1200 > .d_flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#event .item {
+  width: calc(33% - 18px);
+}
+
+#shop {
+  background-color: #f1f1f1;
+  padding: 40px;
+}
+
+#shop .shop_slick {
+  width: calc(100% + 36px);
+  margin: 0 -18px;
+}
+
+#shop .item {
+  padding: 0 18px;
+}
+
+#ad_footer {
+  padding: 40px;
+}
+
+#ad_footer .d_flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#ad_footer .d_flex a {
+  width: calc(50% - 10px);
 }
 
 @media screen and (max-width: 999px) {

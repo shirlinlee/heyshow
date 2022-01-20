@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon" />
 
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link href="plugins/css/animate.css" rel="stylesheet" />
+    <link href="plugins/css/slick.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 
     <!--[if lt IE 9]>
@@ -21,32 +21,24 @@
     <![endif]-->
 
     <script src="plugins/js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
-
-    <script type="text/javascript" src="plugins/js/gsap.min.js"></script>
-    <script type="text/javascript" src="plugins/js/ScrollMagic.js"></script>
-    <script type="text/javascript" src="plugins/js/animation.gsap.js"></script>
-    <script
-      type="text/javascript"
-      src="plugins/js/debug.addIndicators.js"
-    ></script>
-
-    <script src="plugins/js/ripples.js"></script>
+    <script src="plugins/js/slick.min.js"></script>
     <script src="plugins/js/babel.min.js"></script>
-    <script src="plugins/js/vue.js"></script>
   </head>
 
   <body>
     <div id="app">
       <div id="header">
         <div class="W1200 d_flex">
-          <a href="" class="logo"><img src="images/logo.svg" alt="blukoi" /></a>
-          <ul class="nav d_flex">
-            <li></li>
-            <li></li>
-          </ul>
-          <button class="menu_btn" @click="menuHandler"></button>
+          <a href="" class="logo"><img src="images/logo.png" alt="blukoi" /></a>
+          <div class="nav d_flex">
+            <a class="nav_item"><img src="images/icon-member.png" alt="" /></a>
+            <a class="nav_item"><img src="images/icon-search.png" alt="" /></a>
+            <label class="nav_item menu-open-button" for="menu-open">
+              <span class="hamburger hamburger-1"></span>
+              <span class="hamburger hamburger-2"></span>
+              <span class="hamburger hamburger-3"></span>
+            </label>
+          </div>
         </div>
       </div>
 
@@ -92,30 +84,781 @@
                     alt=""
                   />
                   <div class="poA f_white">
-                    <font class="detail f12">Dec 30, 2020 | 徐思穎</font>
-                    <font class="see f12">3533</font>
-                    <h6 class="f18">
+                    <font class="detail f12"
+                      ><span class="date">Dec 30, 2020</span> |
+                      <span class="name">徐思穎</span></font
+                    >
+                    <font class="see white f12">3533</font>
+                    <h6 class="f18 line2">
                       國際插畫大賽怎麼贏？人生就求一次如魚得水紐約金獎插畫家Cinyee
                       Chiu！【街角文創系列專訪】
                     </h6>
                   </div>
                 </div>
 
-                <p class="f14 f_grey">
+                <p class="f14 f_grey line3">
                   歡迎來到無相機攝影系列的續集！續接上回，我們介紹了無相機攝影中最常見的實物投影法（Photograms），這次則想和大家好好聊聊無相機攝影系統中另外兩種攝影手法：化學成像（Chemigrams）與光跡成像（Luminograms）。它們雖然不比實物投影法出名，但對攝影史的貢獻卻能與之分庭抗禮，試想火藥、螢火蟲、油漆等這些與攝影八竿子打不著的東西，也能參與影像製作，在這個領域中，沒有做不到的事，只有想不到的點子！
                 </p>
               </div>
               <a href="" class="continue f_blue f14">繼續閱讀</a>
             </div>
-            <div class="sec_center"></div>
-            <div class="sec_right"></div>
+            <div class="sec_center">
+              <div class="item">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                  <div class="poA f_white">
+                    <font class="detail f12"
+                      ><span class="date">Dec 30, 2020</span> |
+                      <span class="name">徐思穎</span></font
+                    >
+                    <font class="see white f12">3533</font>
+                    <h6 class="f18 line2">
+                      國際插畫大賽怎麼贏？人生就求一次如魚得水紐約金獎插畫家Cinyee
+                      Chiu！【街角文創系列專訪】
+                    </h6>
+                  </div>
+                </div>
+
+                <p class="f14 f_grey line2">
+                  歡迎來到無相機攝影系列的續集！續接上回，我們介紹了無相機攝影中最常見的實物投影法，這次則想和大家好好聊聊無相機攝影系統中另外兩種攝影手法：化學成像（Chemigrams）與光跡成像（Luminograms）。它們雖然不比實物投影法出名，但對攝影史的貢獻卻能與之分庭抗禮，試想火藥、螢火蟲、油漆等這些與攝影八竿子打不著的東西，也能參與影像製作，在這個領域中，沒有做不到的事，只有想不到的點子！
+                </p>
+              </div>
+              <div class="item">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                  <div class="poA f_white">
+                    <font class="detail f12"
+                      ><span class="date">Dec 30, 2020</span> |
+                      <span class="name">徐思穎</span></font
+                    >
+                    <font class="see white f12">3533</font>
+                    <h6 class="f18 line2">
+                      國際插畫大賽怎麼贏？人生就求一次如魚得水紐約金獎插畫家Cinyee
+                      Chiu！【街角文創系列專訪】
+                    </h6>
+                  </div>
+                </div>
+
+                <p class="f14 f_grey line2">
+                  歡迎來到無相機攝影系列的續集！續接上回，我們介紹了無相機攝影中最常見的實物投影法，這次則想和大家好好聊聊無相機攝影系統中另外兩種攝影手法：化學成像（Chemigrams）與光跡成像（Luminograms）。它們雖然不比實物投影法出名，但對攝影史的貢獻卻能與之分庭抗禮，試想火藥、螢火蟲、油漆等這些與攝影八竿子打不著的東西，也能參與影像製作，在這個領域中，沒有做不到的事，只有想不到的點子！
+                </p>
+              </div>
+            </div>
+            <div class="sec_right">
+              <div class="title">
+                <h5>Fetures</h5>
+                <h6>設計文章</h6>
+              </div>
+              <div class="item txt_out">
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【街角文創系列專訪】城市中的生活雕刻店-
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【街角文創系列專訪】城市中的生活雕刻店-
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【街角文創系列專訪】城市中的生活雕刻店-
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【街角文創系列專訪】城市中的生活雕刻店-
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【街角文創系列專訪】城市中的生活雕刻店-
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="W1200 t_center">
+            <a href="" class="more_btn">MORE</a>
           </div>
         </div>
-        <div class="title">
-          <h5>News</h5>
-          <h6>設計新聞</h6>
+        <div id="news">
+          <div class="W1200">
+            <div class="title">
+              <h5>News</h5>
+              <h6>設計新聞</h6>
+            </div>
+            <div class="d_flex">
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="W1200 t_center">
+            <a href="" class="more_btn">MORE</a>
+          </div>
         </div>
-        <a href="" class="more_btn">MORE</a>
+        <div id="event">
+          <div class="W1200">
+            <div class="title">
+              <h5>Event</h5>
+              <h6>設計活動</h6>
+            </div>
+            <div class="d_flex">
+              <div class="item txt_out detail_show">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-2.3.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】<font class="see grey f12 f_grey"
+                    >3533</font
+                  >
+                </h6>
+                <div class="detail f14">
+                  <div class="d_flex tr">
+                    <p class="th">活動時程</p>
+                    <p class="td">2019/05/31 - 2019/06/03</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">活動地點</p>
+                    <p class="td">松山文創園區五號倉庫</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">活動網站</p>
+                    <p class="td"><a href="#" class="f_blue">點我前往</a></p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">電子信箱</p>
+                    <p class="td">ntnudd108@gmail.com</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">主辦單位</p>
+                    <p class="td">台灣師範大學設計系108級</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item txt_out detail_show">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-2.3.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】<font class="see grey f12 f_grey"
+                    >3533</font
+                  >
+                </h6>
+                <div class="detail f14">
+                  <div class="d_flex tr">
+                    <p class="th">活動時程</p>
+                    <p class="td">2019/05/31 - 2019/06/03</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">活動地點</p>
+                    <p class="td">松山文創園區五號倉庫</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">活動網站</p>
+                    <p class="td"><a href="#" class="f_blue">點我前往</a></p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">電子信箱</p>
+                    <p class="td">ntnudd108@gmail.com</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">主辦單位</p>
+                    <p class="td">台灣師範大學設計系108級</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item txt_out detail_show">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-2.3.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】<font class="see grey f12 f_grey"
+                    >3533</font
+                  >
+                </h6>
+                <div class="detail f14">
+                  <div class="d_flex tr">
+                    <p class="th">活動時程</p>
+                    <p class="td">2019/05/31 - 2019/06/03</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">活動地點</p>
+                    <p class="td">松山文創園區五號倉庫</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">活動網站</p>
+                    <p class="td"><a href="#" class="f_blue">點我前往</a></p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">電子信箱</p>
+                    <p class="td">ntnudd108@gmail.com</p>
+                  </div>
+                  <div class="d_flex tr">
+                    <p class="th">主辦單位</p>
+                    <p class="td">台灣師範大學設計系108級</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="W1200 t_center">
+            <a href="" class="more_btn">MORE</a>
+          </div>
+        </div>
+        <div id="shop">
+          <div class="W1200">
+            <div class="title">
+              <h5>Shop</h5>
+              <h6>設計商店</h6>
+            </div>
+            <div class="shop_slick">
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+              <div class="item txt_out">
+                <div class="img_wrapper">
+                  <img
+                    src="images/1-1.4.png"
+                    style="background-image: url('images/img-01.png')"
+                    alt=""
+                  />
+                </div>
+                <font class="detail f12"
+                  ><span class="date f_blue">Dec 30, 2020</span> |
+                  <span class="name">徐思穎</span></font
+                >
+                <font class="see grey f12 f_grey">3533</font>
+                <h6 class="f18 line2">
+                  【再愛我一次，牧木工坊將寵物骨灰轉化成飾品，用創意讓思念延伸
+                  【街角文創系列專訪】
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="W1200 t_center">
+            <a href="" class="more_btn">MORE</a>
+          </div>
+        </div>
+        <div id="ad_footer">
+          <div class="W1500 d_flex">
+            <a href="#" class="ad ad_03">
+              <img src="images/ad-03.jpg" alt="" />
+            </a>
+            <a href="#" class="ad ad_03">
+              <img src="images/ad-03.jpg" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
       <div id="footer">
         <div class="footer_detail f_white">
@@ -149,9 +892,9 @@
             Copyright © 2000-2021 HeyShow.com. All rights reserved. <br />
             本站所有文字圖片未經許可不得轉載，敬請尊重本站所有智慧財產權權利。
           </p>
-          <div>
-            <a href=""></a>
-            <a href=""></a>
+          <div class="d_flex">
+            <a href=""><img src="images/icon-mail.png" alt="" /></a>
+            <a href=""><img src="images/icon-fb.png" alt="" /></a>
           </div>
         </div>
       </div>
