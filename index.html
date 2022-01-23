@@ -30,30 +30,93 @@
       <div id="header">
         <div class="W1200 d_flex">
           <a href="" class="logo"><img src="images/logo.png" alt="blukoi" /></a>
-          <div class="nav d_flex">
-            <a class="nav_item"><img src="images/icon-member.png" alt="" /></a>
-            <a class="nav_item"><img src="images/icon-search.png" alt="" /></a>
-            <label class="nav_item menu-open-button" for="menu-open">
+          <div class="func d_flex">
+            <a class="func_item"><img src="images/icon-member.png" alt="" /></a>
+            <a class="func_item"><img src="images/icon-search.png" alt="" /></a>
+            <label class="func_item menu-open-button" for="menu-open">
               <span class="hamburger hamburger-1"></span>
               <span class="hamburger hamburger-2"></span>
               <span class="hamburger hamburger-3"></span>
             </label>
           </div>
+          <ul class="nav d_flex">
+            <li class="redirect">
+              <p>首頁</p>
+              <font>Index</font>
+            </li>
+            <li class="redirect">
+              <p>黑秀粉絲團</p>
+              <font>Facebook</font>
+            </li>
+            <li class="redirect">
+              <p>設計文章</p>
+              <font>Features</font>
+            </li>
+            <li class="redirect">
+              <p>設計新聞</p>
+              <font>News</font>
+            </li>
+            <li class="redirect">
+              <p>設計活動</p>
+              <font>Events</font>
+            </li>
+            <li class="redirect">
+              <p>設計畫廊</p>
+              <font>Gallery</font>
+            </li>
+            <li class="redirect">
+              <p>設計商店</p>
+              <font>Shop</font>
+            </li>
+            <li class="redirect">
+              <p>設計工作</p>
+              <font>Jobs</font>
+            </li>
+            <li class="sub_nav_btn">
+              <p>關於我們</p>
+              <font>About Us</font>
+              <img src="images/icon-arrow_02.png" class="poA" alt="" />
+            </li>
+            <li class="redirect">
+              <p></p>
+              <font></font>
+            </li>
+            <div class="sub_nav d_flex">
+              <li class="redirect">
+                <p>黑秀介紹</p>
+                <font>Introdution</font>
+              </li>
+              <li class="redirect">
+                <p>隱私權政策</p>
+                <font>Right of Privacy</font>
+              </li>
+              <li class="redirect">
+                <p>畢業展贊助</p>
+                <font>Sponsor</font>
+              </li>
+              <li class="redirect">
+                <p>Q＆A</p>
+                <font></font>
+              </li>
+            </div>
+          </ul>
         </div>
+        <!-- <div class="menu_bg"></div> -->
       </div>
 
       <div class="wrapper">
         <div id="tab">
           <ul class="d_flex W1200">
-            <li class="active">
+            <li data-anchor="features">
+              <!-- class="active" -->
               <p>設計文章</p>
               <span>Fetures</span>
             </li>
-            <li>
+            <li data-anchor="events">
               <p>設計活動</p>
               <span>Events</span>
             </li>
-            <li>
+            <li data-anchor="news">
               <p>設計新聞</p>
               <span>News</span>
             </li>
@@ -61,7 +124,7 @@
               <p>設計畫廊</p>
               <span>Gallery</span>
             </li>
-            <li>
+            <li data-anchor="shop">
               <p>設計商店</p>
               <span>Shop</span>
             </li>
@@ -154,7 +217,7 @@
             </div>
             <div class="sec_right">
               <div class="title">
-                <h5>Fetures</h5>
+                <h5>Features</h5>
                 <h6>設計文章</h6>
               </div>
               <div class="item txt_out">
@@ -280,7 +343,7 @@
             <a href="" class="more_btn">MORE</a>
           </div>
         </div>
-        <div id="event">
+        <div id="events">
           <div class="W1200">
             <div class="title">
               <h5>Event</h5>
