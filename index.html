@@ -31,8 +31,12 @@
         <div class="W1200 d_flex">
           <a href="" class="logo"><img src="images/logo.png" alt="blukoi" /></a>
           <div class="func d_flex">
-            <a class="func_item"><img src="images/icon-member.png" alt="" /></a>
-            <a class="func_item"><img src="images/icon-search.png" alt="" /></a>
+            <a class="func_item" data-item="member"
+              ><img src="images/icon-member.png" alt=""
+            /></a>
+            <a class="func_item" data-item="search"
+              ><img src="images/icon-search.png" alt=""
+            /></a>
             <label class="func_item menu-open-button" for="menu-open">
               <span class="hamburger hamburger-1"></span>
               <span class="hamburger hamburger-2"></span>
@@ -40,7 +44,7 @@
             </label>
           </div>
           <ul class="nav d_flex">
-            <li class="redirect">
+            <li class="redirect active">
               <p>首頁</p>
               <font>Index</font>
             </li>
@@ -134,8 +138,15 @@
           <div class="d_flex W1200">
             <input type="text" placeholder="搜尋設計文章" />
             <input type="button" value="Search" class="f18" />
+            <div class="banner_right poA">
+              <a href=""
+                ><img src="images/banner-01.jpg" alt="" class="pc"
+              /></a>
+              <a href=""><img src="images/banner-02.jpg" alt="" /></a>
+            </div>
           </div>
         </form>
+
         <div id="features">
           <div class="W1200 d_flex">
             <div class="sec_left">
@@ -146,6 +157,7 @@
                     style="background-image: url('images/img-01.png')"
                     alt=""
                   />
+
                   <div class="poA f_white">
                     <font class="detail f12"
                       ><span class="date">Dec 30, 2020</span> |
@@ -912,13 +924,13 @@
             <a href="" class="more_btn">MORE</a>
           </div>
         </div>
-        <div id="ad_footer">
+        <div id="banner_footer">
           <div class="W1500 d_flex">
             <a href="#" class="ad ad_03">
-              <img src="images/ad-03.jpg" alt="" />
+              <img src="images/banner-03.jpg" alt="" />
             </a>
             <a href="#" class="ad ad_03">
-              <img src="images/ad-03.jpg" alt="" />
+              <img src="images/banner-03.jpg" alt="" />
             </a>
           </div>
         </div>
@@ -926,27 +938,27 @@
       <div id="footer">
         <div class="footer_detail f_white">
           <ul class="d_flex footer_ul">
-            <li>
+            <li class="flex0">
               <p>About us</p>
               <span>關於我們</span>
             </li>
-            <li>
+            <li class="flex1">
               <p>Right of Privacy</p>
               <span>隱私權政策</span>
             </li>
-            <li>
+            <li class="flex2">
               <p>Advertise</p>
               <span>廣告刊登</span>
             </li>
-            <li>
+            <li class="flex0">
               <p>Sponsor</p>
               <span>設計畢展贊助</span>
             </li>
-            <li>
+            <li class="flex1">
               <p>Q&A</p>
               <span>問與答</span>
             </li>
-            <li>
+            <li class="flex2">
               <p>Contact us</p>
               <span>聯絡我們</span>
             </li>
@@ -960,6 +972,62 @@
             <a href=""><img src="images/icon-fb.png" alt="" /></a>
           </div>
         </div>
+      </div>
+
+      <div class="lb_wrapper">
+        <div class="lb member">
+          <ul class="lb_tabs d_flex">
+            <li class="active" data-member="signIn">會員登入</li>
+            <li data-member="signOut">會員註冊</li>
+          </ul>
+          <div class="member_content">
+            <input type="text" name="account" placeholder="會員帳號" />
+            <input type="password" name="password1" placeholder="會員密碼" />
+            <input
+              type="password"
+              name="password2"
+              placeholder="確認密碼"
+              class="hidden"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail信箱"
+              class="hidden"
+            />
+            <div class="btn_area">
+              <input
+                type="button"
+                value="會員登入"
+                name="signIn"
+                class="status signIn"
+              />
+              <input
+                type="button"
+                value="使用Facebook帳號登入"
+                name="fb_signIn"
+                class="status signIn"
+              />
+              <div class="W100 status signOut" style="display: none">
+                <input type="checkbox" name="agreement" id="agreement" />
+                <label for="agreement">
+                  <font class="f14">我已同意並詳閱同意 </font>
+                  <font class="f_blue f14"
+                    >黑秀網會員規章及會員隱私權政策
+                  </font>
+                </label>
+              </div>
+              <input
+                type="button"
+                name="submit"
+                value="送出表單"
+                class="status signOut"
+                style="display: none"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="lb search"></div>
       </div>
     </div>
 
