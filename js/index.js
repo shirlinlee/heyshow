@@ -8,16 +8,17 @@ const index = {
       adaptiveHeight: true,
     });
   },
+  $body: $("body"),
   navHandler: function () {
-    $("body").on("click", ".menu-open-button", function () {
+    index.$body.on("click", ".menu-open-button", function () {
       $(".menu-open-button,.nav").toggleClass("active");
     });
 
-    $("body").on("click", ".sub_nav_btn", function () {
+    index.$body.on("click", ".sub_nav_btn", function () {
       $(".sub_nav_btn,.sub_nav").toggleClass("active");
     });
 
-    $("body").on("click", ".redirect", function () {
+    index.$body.on("click", ".redirect", function () {
       $(".menu-open-button,.nav,.sub_nav_btn,.sub_nav").removeClass("active");
     });
   },
@@ -25,35 +26,34 @@ const index = {
     var $body = window.opera
       ? document.compatMode == "CSS1Compat"
         ? $("html")
-        : $("body")
+        : index.$body
       : $("html,body");
     $("#tab").on("click", "li", function () {
       var anchor = $(this).attr("data-anchor");
       if (anchor) {
-        console.log(anchor);
         $body.animate({ scrollTop: $(`#${anchor}`).offset().top - 70 }, 700);
       }
     });
   },
   lbHandler: function () {
-    $("body").on("click", "a.func_item", function () {
+    index.$body.on("click", "a.func_item", function () {
       var item = $(this).attr("data-item");
-      console.log(item);
-      $(".lb_wrapper").fadeIn(300, function () {
-        $(`.${item}`).show();
-      });
+      $(".lb").hide();
+      $(".lb_wrapper").fadeIn(200);
+      $(`.${item}`).show();
     });
-    $("body").on("click", ".lb_wrapper", function () {
-      $(".lb_wrapper").fadeOut(300, function () {
+    index.$body.on("click", ".lb_wrapper", function () {
+      $(".lb_wrapper").fadeOut(200, function () {
         $(".lb").hide();
+        $(".lb").find("input:not([type='button'])").val("");
       });
     });
 
-    $("body").on("click", ".lb", function (e) {
+    index.$body.on("click", ".lb", function (e) {
       e.stopPropagation();
     });
 
-    $("body").on("click", ".lb_tabs li", function (e) {
+    index.$body.on("click", ".lb_tabs li", function (e) {
       e.stopPropagation();
       var memberStatus = $(this).attr("data-member");
       var $ele2 = $('input[name="password2"], input[name="email"]');
@@ -66,6 +66,16 @@ const index = {
       } else {
         $ele2.removeClass("hidden");
       }
+    });
+
+    index.$body.on("click", ".fake_select", function (e) {
+      $(this).find("img").addClass("active");
+      $(".search_list").addClass("show");
+    });
+    index.$body.on("click", ".search_list li", function () {
+      $(".fake_select").find("img").removeClass("active");
+      $("input[name='category']").val($(this).html());
+      $(".search_list").removeClass("show");
     });
   },
 };
