@@ -6,6 +6,18 @@ const index = {
       slidesToShow: 4,
       slidesToScroll: 4,
       adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 599,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            infinite: false,
+          },
+        },
+      ],
     });
   },
   $body: $("body"),
@@ -29,10 +41,19 @@ const index = {
         ? $("html")
         : index.$body
       : $("html,body");
+
     $("#tab").on("click", "li", function () {
+      $("#tab").find("li").removeClass("active");
+      $(this).addClass("active");
       var anchor = $(this).attr("data-anchor");
       if (anchor) {
-        $body.animate({ scrollTop: $(`#${anchor}`).offset().top - 70 }, 700);
+        var scrollTop = window.innerWidth < 600 ? 90 : 70;
+        $body.animate(
+          {
+            scrollTop: $(`#${anchor}`).offset().top - scrollTop,
+          },
+          700
+        );
       }
     });
   },

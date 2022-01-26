@@ -123,7 +123,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 43%;
 
     display: block;
 
@@ -142,14 +142,6 @@
     background: transparent;
 }
 
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-    color: transparent;
-    outline: none;
-    background: transparent;
-}
 
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -158,13 +150,14 @@
     opacity: 1;
 }
 
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-    opacity: .25;
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+    display: none;
 }
 
 .slick-prev:before,
 .slick-next:before {
+    content: '';
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
@@ -185,14 +178,6 @@
     left: auto;
 }
 
-.slick-prev:before {
-    content: '←';
-}
-
-[dir='rtl'] .slick-prev:before {
-    content: '→';
-}
-
 .slick-next {
     right: -25px;
 }
@@ -202,13 +187,6 @@
     left: -25px;
 }
 
-.slick-next:before {
-    content: '→';
-}
-
-[dir='rtl'] .slick-next:before {
-    content: '←';
-}
 
 /* Dots */
 .slick-dotted.slick-slider {
