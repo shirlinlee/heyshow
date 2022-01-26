@@ -20,6 +20,10 @@ html {
   }
 }
 
+a {
+  color: inherit;
+}
+
 * {
   box-sizing: border-box;
   font-weight: normal;
@@ -304,10 +308,12 @@ button {
       width: 100%;
       padding: 60px 35px 30px;
       background: rgb(0, 0, 0);
-      background: linear-gradient(0deg,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1) 40%,
-          rgba(0, 0, 0, 0));
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 0)
+      );
 
       @media screen and (max-width: 999px) {
         padding: 40px 25px 20px;
@@ -576,7 +582,6 @@ button {
       right: inherit;
       left: -15px;
       top: 60px;
-
     }
 
     &.active {
@@ -608,7 +613,8 @@ button {
         }
       }
 
-      &:hover {}
+      &:hover {
+      }
 
       p {
         font-size: 14px;
@@ -732,7 +738,6 @@ button {
     @media screen and (max-width: 599px) {
       width: 50%;
       margin-bottom: 25px;
-
     }
   }
 
@@ -763,15 +768,13 @@ button {
   .d_flex {
     justify-content: center;
 
-
-    a {
+    .contact {
       height: 33px;
       display: inline-block;
       margin: 0 11px;
 
       @media screen and (max-width: 599px) {
         height: 23px;
-
       }
 
       img {
@@ -792,8 +795,6 @@ button {
       -o-transform: translate(0, -100%);
     }
   }
-
-
 }
 
 .wrapper {
@@ -803,7 +804,7 @@ button {
     padding-top: 120px;
   }
 
-  >div {
+  > div {
     padding-left: 40px;
     padding-right: 40px;
 
@@ -960,7 +961,7 @@ button {
   padding-bottom: 40px;
   position: relative;
 
-  >.d_flex {
+  > .d_flex {
     justify-content: space-between;
 
     .sec_left {
@@ -1091,7 +1092,7 @@ button {
         }
 
         &:after {
-          content: 'MORE';
+          content: "MORE";
           position: absolute;
           right: 0;
           bottom: 18px;
@@ -1100,16 +1101,14 @@ button {
           background-color: #303131;
           font-size: 12px;
           transform-origin: right bottom;
-          transform: scale(.85) translate(0, 100%);
-          -webkit-transform: scale(.85) translate(0, 100%);
-          -moz-transform: scale(.85) translate(0, 100%);
-          -ms-transform: scale(.85) translate(0, 100%);
-          -o-transform: scale(.85) translate(0, 100%);
+          transform: scale(0.85) translate(0, 100%);
+          -webkit-transform: scale(0.85) translate(0, 100%);
+          -moz-transform: scale(0.85) translate(0, 100%);
+          -ms-transform: scale(0.85) translate(0, 100%);
+          -o-transform: scale(0.85) translate(0, 100%);
           box-shadow: 0px 5px 8.6px 0.4px rgba(4, 0, 0, 0.28);
         }
       }
-
-
     }
   }
 }
@@ -1120,11 +1119,10 @@ button {
   @media screen and (max-width: 599px) {
     padding: 30px 20px;
     background-color: #e6e6e5;
-
   }
 
   .W1200 {
-    >.d_flex {
+    > .d_flex {
       justify-content: space-between;
     }
   }
@@ -1138,7 +1136,6 @@ button {
       padding: 15px;
       box-shadow: 0px 5px 8.6px 0.4px rgba(4, 0, 0, 0.14);
 
-
       .img_wrapper {
         padding: 0;
 
@@ -1150,8 +1147,6 @@ button {
         }
       }
     }
-
-
   }
 }
 
@@ -1173,7 +1168,6 @@ button {
 
     @media screen and (max-width: 599px) {
       padding: 0 10px;
-
 
       .img_wrapper {
         padding: 0;
@@ -1197,10 +1191,8 @@ button {
         display: -webkit-box;
         padding-left: 0;
         padding-top: 10px;
-
       }
     }
-
   }
 }
 
@@ -1494,7 +1486,6 @@ button {
   }
 }
 
-
 @media screen and (max-width: 999px) {
   .mb {
     display: inline-block !important;
@@ -1545,7 +1536,6 @@ button {
   }
 }
 
-
 @media screen and (min-width: 600px) and (max-width: 999px) {
   .pad {
     display: inline-block !important;
@@ -1554,7 +1544,6 @@ button {
   .mb {
     display: none !important;
   }
-
 }
 
 @media screen and (max-width: 599px) {

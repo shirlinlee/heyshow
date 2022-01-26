@@ -6,6 +6,7 @@ const index = {
       slidesToShow: 4,
       slidesToScroll: 4,
       adaptiveHeight: true,
+      arrows: false,
       responsive: [
         {
           breakpoint: 599,

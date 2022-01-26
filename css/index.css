@@ -10,6 +10,10 @@ html.scrollHide {
   overflow-y: hidden;
 }
 
+a {
+  color: inherit;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -802,19 +806,19 @@ button {
           justify-content: center;
 }
 
-#footer .d_flex a {
+#footer .d_flex .contact {
   height: 33px;
   display: inline-block;
   margin: 0 11px;
 }
 
 @media screen and (max-width: 599px) {
-  #footer .d_flex a {
+  #footer .d_flex .contact {
     height: 23px;
   }
 }
 
-#footer .d_flex a img {
+#footer .d_flex .contact img {
   height: 100%;
 }
 
@@ -1168,7 +1172,7 @@ button {
     height: 90px;
   }
   #news .d_flex .item:after {
-    content: 'MORE';
+    content: "MORE";
     position: absolute;
     right: 0;
     bottom: 18px;
