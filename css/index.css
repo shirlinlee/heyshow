@@ -204,14 +204,36 @@ button {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 599px) {
+  .title {
+    margin-bottom: 15px;
+  }
+}
+
 .title h5 {
   font-size: 32px;
   padding-bottom: 12px;
 }
 
+@media screen and (max-width: 599px) {
+  .title h5 {
+    font-size: 23px;
+    padding-bottom: 6px;
+    text-align: center;
+  }
+}
+
 .title h6 {
+  font-size: 18px;
   color: #808080;
   font-family: "Noto Serif TC", serif;
+}
+
+@media screen and (max-width: 599px) {
+  .title h6 {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -249,6 +271,13 @@ button {
   background-image: url(../images/icon-eye-grey.png);
 }
 
+@media screen and (max-width: 599px) {
+  .see {
+    padding-left: 16px;
+    background-size: 12px;
+  }
+}
+
 .item {
   margin-bottom: 30px;
 }
@@ -257,9 +286,25 @@ button {
   position: relative;
 }
 
+@media screen and (max-width: 599px) {
+  .item .img_wrapper {
+    padding-left: 95px;
+  }
+}
+
 .item .img_wrapper img {
   width: 100%;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 599px) {
+  .item .img_wrapper img {
+    width: 90px;
+    height: 115px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 
 .item .img_wrapper .poA {
@@ -278,12 +323,35 @@ button {
   }
 }
 
+@media screen and (max-width: 599px) {
+  .item .img_wrapper .poA {
+    position: relative;
+    padding: 0 0 0 10px;
+    background: none;
+    color: #000;
+  }
+}
+
 .item .img_wrapper .poA h6 {
   margin-top: 6px;
 }
 
 .item .see {
   float: right;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 599px) {
+  .item .see {
+    background-image: url(../images/icon-eye-grey.png);
+    color: #7f8080;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .item .detail {
+    color: #44bbc1;
+  }
 }
 
 .item h6 {
@@ -292,6 +360,14 @@ button {
 
 .item p {
   line-height: 1.7;
+}
+
+@media screen and (max-width: 599px) {
+  .item p {
+    padding-top: 5px;
+    padding-left: 105px;
+    line-height: 1.5;
+  }
 }
 
 .item .line2 {
@@ -370,9 +446,15 @@ button {
   z-index: 10;
 }
 
+@media screen and (max-width: 599px) {
+  #header {
+    height: 60px;
+  }
+}
+
 #header .W1200 {
   margin: 0 auto;
-  padding: 17px 0;
+  padding: 19px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -383,10 +465,23 @@ button {
   width: calc(100% - 30px);
 }
 
+@media screen and (max-width: 599px) {
+  #header .W1200 {
+    padding: 14px 0;
+  }
+}
+
 #header .W1200 .logo {
   width: 170px;
   position: relative;
   z-index: 50;
+}
+
+@media screen and (max-width: 599px) {
+  #header .W1200 .logo {
+    margin-left: 45px;
+    width: 160px;
+  }
 }
 
 #header .W1200 .func {
@@ -397,6 +492,12 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 599px) {
+  #header .W1200 .func {
+    width: 70px;
+  }
 }
 
 #header .W1200 .func a {
@@ -414,6 +515,14 @@ button {
   position: relative;
   width: 35px;
   height: 35px;
+}
+
+@media screen and (max-width: 599px) {
+  #header .W1200 .func label {
+    position: absolute;
+    left: 0px;
+    top: 15px;
+  }
 }
 
 #header .W1200 .menu-open-button .hamburger {
@@ -488,6 +597,13 @@ button {
     -moz-transform: translate(190px, 0);
     -ms-transform: translate(190px, 0);
     -o-transform: translate(190px, 0);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #header .nav {
+    right: inherit;
+    left: -15px;
   }
 }
 
@@ -652,13 +768,47 @@ button {
   padding-top: 110px;
 }
 
+@media screen and (max-width: 599px) {
+  .wrapper {
+    padding-top: 120px;
+  }
+}
+
 .wrapper > div {
   padding-left: 40px;
   padding-right: 40px;
 }
 
+@media screen and (max-width: 599px) {
+  .wrapper > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 #tab {
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 599px) {
+  #tab {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    overflow-x: scroll;
+    position: fixed;
+    background-color: #fff;
+    z-index: 50;
+    top: 60px;
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #tab ul {
+    width: 500px;
+  }
 }
 
 #tab li {
@@ -689,9 +839,36 @@ button {
   color: #44bbc1;
 }
 
+@media screen and (max-width: 599px) {
+  #tab li {
+    color: #44bbc1;
+    border: none !important;
+    width: 100px;
+    padding: 0;
+    line-height: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  #tab li span {
+    display: none;
+  }
+  #tab li.active {
+    background-color: #44bbc1;
+    color: #fff;
+  }
+}
+
 #search {
   padding-left: 40px;
   padding-right: 40px;
+}
+
+@media screen and (max-width: 599px) {
+  #search {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
 }
 
 #search .W1200 {
@@ -702,6 +879,12 @@ button {
   -webkit-appearance: none;
   height: 46px;
   border: 1px solid #000;
+}
+
+@media screen and (max-width: 599px) {
+  #search input {
+    display: none;
+  }
 }
 
 #search input[type="text"] {
@@ -733,9 +916,25 @@ button {
           transform: translate(100%, 0);
 }
 
+@media screen and (max-width: 599px) {
+  #search .banner_right {
+    position: relative;
+    width: 100%;
+    right: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 #search .banner_right img {
   width: 300px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 599px) {
+  #search .banner_right img {
+    margin-bottom: 0;
+  }
 }
 
 #features {
@@ -761,6 +960,13 @@ button {
   }
 }
 
+@media screen and (max-width: 599px) {
+  #features > .d_flex .sec_left {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
 #features > .d_flex .sec_left .continue {
   display: inline-block;
   padding-bottom: 8px;
@@ -776,6 +982,12 @@ button {
   }
 }
 
+@media screen and (max-width: 599px) {
+  #features > .d_flex .sec_left .continue {
+    display: none;
+  }
+}
+
 #features > .d_flex .sec_center {
   width: calc(31% - 18px);
 }
@@ -787,6 +999,15 @@ button {
   }
 }
 
+@media screen and (max-width: 599px) {
+  #features > .d_flex .sec_center {
+    width: 100%;
+  }
+  #features > .d_flex .sec_center p {
+    -webkit-line-clamp: 3 !important;
+  }
+}
+
 #features > .d_flex .sec_right {
   width: calc(27% - 18px);
 }
@@ -794,6 +1015,17 @@ button {
 #features > .d_flex .sec_right .item {
   margin-bottom: 22px;
   padding-bottom: 22px;
+}
+
+#features > .d_flex .sec_right .item p {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  #features > .d_flex .sec_right .item p {
+    display: -webkit-box;
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 999px) {
@@ -820,9 +1052,26 @@ button {
   }
 }
 
+@media screen and (max-width: 599px) {
+  #features {
+    padding-top: 100px;
+  }
+  #features .title {
+    top: 30px;
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+}
+
 #news {
   background-color: #f1f1f1;
   padding: 40px;
+}
+
+@media screen and (max-width: 599px) {
+  #news {
+    padding: 30px 20px;
+  }
 }
 
 #news .d_flex {
@@ -833,6 +1082,22 @@ button {
 
 #news .d_flex .item {
   width: calc(33% - 18px);
+  position: relative;
+}
+
+@media screen and (max-width: 599px) {
+  #news .d_flex .item {
+    width: 100%;
+    padding-left: 110px;
+    margin-bottom: 70px;
+  }
+  #news .d_flex .item .img_wrapper {
+    position: absolute;
+    left: 0;
+  }
+  #news .d_flex .item .img_wrapper img {
+    height: 90px;
+  }
 }
 
 #events {
@@ -987,6 +1252,8 @@ button {
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .lb_wrapper .lb.search .W100 .fake_select img.active {
@@ -1032,7 +1299,7 @@ button {
 }
 
 .lb_wrapper .lb.search button[type="submit"]:after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   height: 19px;
@@ -1114,10 +1381,10 @@ button {
     display: none !important;
   }
   .f16 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .f18 {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
   .f22 {
     font-size: 18px;
@@ -1146,6 +1413,9 @@ button {
 }
 
 @media screen and (max-width: 599px) {
+  .f12 {
+    font-size: 11px !important;
+  }
   .f14 {
     font-size: 13px !important;
   }

@@ -9,6 +9,7 @@ const index = {
     });
   },
   $body: $("body"),
+  $lb: $(".lb"),
   navHandler: function () {
     index.$body.on("click", ".menu-open-button", function () {
       $(".menu-open-button,.nav").toggleClass("active");
@@ -38,14 +39,16 @@ const index = {
   lbHandler: function () {
     index.$body.on("click", "a.func_item", function () {
       var item = $(this).attr("data-item");
-      $(".lb").hide();
+      index.$lb.hide();
       $(".lb_wrapper").fadeIn(200);
       $(`.${item}`).show();
     });
     index.$body.on("click", ".lb_wrapper", function () {
       $(".lb_wrapper").fadeOut(200, function () {
-        $(".lb").hide();
-        $(".lb").find("input:not([type='button'])").val("");
+        index.$lb.hide();
+        index.$lb.find("input:not([type='button'])").val("");
+        $(".search_list").removeClass("show");
+        $(".fake_select").find("img").removeClass("active");
       });
     });
 
@@ -76,6 +79,7 @@ const index = {
       $(".fake_select").find("img").removeClass("active");
       $("input[name='category']").val($(this).html());
       $(".search_list").removeClass("show");
+      $(".fake_select").find("img").removeClass("active");
     });
   },
 };

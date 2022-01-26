@@ -209,14 +209,28 @@ button {
   padding-bottom: 25px;
   margin-bottom: 25px;
 
+  @media screen and (max-width: 599px) {
+    margin-bottom: 15px;
+  }
+
   h5 {
     font-size: 32px;
     padding-bottom: 12px;
+    @media screen and (max-width: 599px) {
+      font-size: 23px;
+      padding-bottom: 6px;
+      text-align: center;
+    }
   }
 
   h6 {
+    font-size: 18px;
     color: #808080;
     font-family: "Noto Serif TC", serif;
+    @media screen and (max-width: 599px) {
+      font-size: 15px;
+      text-align: center;
+    }
   }
 
   @media screen and (max-width: 599px) {
@@ -252,6 +266,10 @@ button {
   &.grey {
     background-image: url(../images/icon-eye-grey.png);
   }
+  @media screen and (max-width: 599px) {
+    padding-left: 16px;
+    background-size: 12px;
+  }
 }
 
 .item {
@@ -260,9 +278,20 @@ button {
   .img_wrapper {
     position: relative;
 
+    @media screen and (max-width: 599px) {
+      padding-left: 95px;
+    }
+
     img {
       width: 100%;
       margin-bottom: 20px;
+      @media screen and (max-width: 599px) {
+        width: 90px;
+        height: 115px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
     }
 
     .poA {
@@ -271,13 +300,22 @@ button {
       width: 100%;
       padding: 60px 35px 30px;
       background: rgb(0, 0, 0);
-      background: linear-gradient(0deg,
-          rgba(0, 0, 0, 1),
-          rgba(0, 0, 0, 1) 40%,
-          rgba(0, 0, 0, 0));
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 0)
+      );
 
       @media screen and (max-width: 999px) {
         padding: 40px 25px 20px;
+      }
+
+      @media screen and (max-width: 599px) {
+        position: relative;
+        padding: 0 0 0 10px;
+        background: none;
+        color: #000;
       }
 
       h6 {
@@ -288,6 +326,17 @@ button {
 
   .see {
     float: right;
+    line-height: 17px;
+    @media screen and (max-width: 599px) {
+      background-image: url(../images/icon-eye-grey.png);
+      color: #7f8080;
+    }
+  }
+
+  .detail {
+    @media screen and (max-width: 599px) {
+      color: #44bbc1;
+    }
   }
 
   h6 {
@@ -296,6 +345,11 @@ button {
 
   p {
     line-height: 1.7;
+    @media screen and (max-width: 599px) {
+      padding-top: 5px;
+      padding-left: 105px;
+      line-height: 1.5;
+    }
   }
 
   .line2 {
@@ -376,24 +430,40 @@ button {
   left: 0;
   z-index: 10;
 
+  @media screen and (max-width: 599px) {
+    height: 60px;
+  }
+
   .W1200 {
     margin: 0 auto;
-    padding: 17px 0;
+    padding: 19px 0;
     justify-content: space-between;
     align-items: center;
     position: relative;
     width: calc(100% - 30px);
 
+    @media screen and (max-width: 599px) {
+      padding: 14px 0;
+    }
+
     .logo {
       width: 170px;
       position: relative;
       z-index: 50;
+      @media screen and (max-width: 599px) {
+        margin-left: 45px;
+        width: 160px;
+      }
     }
 
     .func {
       align-items: center;
       width: 120px;
       justify-content: space-between;
+
+      @media screen and (max-width: 599px) {
+        width: 70px;
+      }
 
       a {
         height: 32px;
@@ -407,10 +477,14 @@ button {
 
       label {
         cursor: pointer;
-
         position: relative;
         width: 35px;
         height: 35px;
+        @media screen and (max-width: 599px) {
+          position: absolute;
+          left: 0px;
+          top: 15px;
+        }
       }
     }
 
@@ -486,6 +560,11 @@ button {
       -o-transform: translate(190px, 0);
     }
 
+    @media screen and (max-width: 599px) {
+      right: inherit;
+      left: -15px;
+    }
+
     &.active {
       opacity: 1;
       z-index: 10;
@@ -515,7 +594,8 @@ button {
         }
       }
 
-      &:hover {}
+      &:hover {
+      }
 
       p {
         font-size: 14px;
@@ -653,15 +733,39 @@ button {
 .wrapper {
   padding-top: 110px;
 
-  >div {
+  @media screen and (max-width: 599px) {
+    padding-top: 120px;
+  }
+
+  > div {
     padding-left: 40px;
     padding-right: 40px;
+    @media screen and (max-width: 599px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 }
 
 #tab {
   margin-bottom: 25px;
-
+  @media screen and (max-width: 599px) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    overflow-x: scroll;
+    position: fixed;
+    background-color: #fff;
+    z-index: 50;
+    top: 60px;
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+  ul {
+    @media screen and (max-width: 599px) {
+      width: 500px;
+    }
+  }
   li {
     width: 20%;
     border-top: 3px solid #000;
@@ -689,12 +793,35 @@ button {
       border-top: 2px solid #44bbc1;
       color: #44bbc1;
     }
+
+    @media screen and (max-width: 599px) {
+      color: #44bbc1;
+      border: none !important;
+      width: 100px;
+      padding: 0;
+      line-height: 28px;
+      margin-bottom: 5px;
+      text-align: center;
+      span {
+        display: none;
+      }
+      &.active {
+        background-color: #44bbc1;
+        color: #fff;
+      }
+    }
   }
 }
 
 #search {
   padding-left: 40px;
   padding-right: 40px;
+
+  @media screen and (max-width: 599px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
 
   .W1200 {
     position: relative;
@@ -704,6 +831,10 @@ button {
     -webkit-appearance: none;
     height: 46px;
     border: 1px solid #000;
+
+    @media screen and (max-width: 599px) {
+      display: none;
+    }
 
     &[type="text"] {
       width: calc(100% - 170px);
@@ -732,10 +863,18 @@ button {
     right: -50px;
     top: 0;
     transform: translate(100%, 0);
-
+    @media screen and (max-width: 599px) {
+      position: relative;
+      width: 100%;
+      right: 0;
+      transform: none;
+    }
     img {
       width: 300px;
       margin-bottom: 40px;
+      @media screen and (max-width: 599px) {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -745,7 +884,7 @@ button {
   padding-bottom: 40px;
   position: relative;
 
-  >.d_flex {
+  > .d_flex {
     justify-content: space-between;
 
     .sec_left {
@@ -754,6 +893,11 @@ button {
       @media screen and (max-width: 999px) {
         width: calc(58% - 18px);
         margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 599px) {
+        width: 100%;
+        margin-bottom: 0;
       }
 
       .continue {
@@ -767,6 +911,9 @@ button {
         @media screen and (max-width: 999px) {
           margin-top: 10px;
         }
+        @media screen and (max-width: 599px) {
+          display: none;
+        }
       }
     }
 
@@ -777,6 +924,13 @@ button {
         width: calc(42% - 18px);
         margin-bottom: 20px;
       }
+
+      @media screen and (max-width: 599px) {
+        width: 100%;
+        p {
+          -webkit-line-clamp: 3 !important;
+        }
+      }
     }
 
     .sec_right {
@@ -785,6 +939,14 @@ button {
       .item {
         margin-bottom: 22px;
         padding-bottom: 22px;
+
+        p {
+          display: none;
+          @media screen and (max-width: 599px) {
+            display: -webkit-box;
+            padding-left: 0;
+          }
+        }
 
         @media screen and (max-width: 999px) {
           border-bottom: solid 1px #9f9fa0;
@@ -807,17 +969,43 @@ button {
       width: calc(100% - 80px);
     }
   }
+  @media screen and (max-width: 599px) {
+    padding-top: 100px;
+
+    .title {
+      top: 30px;
+      left: 20px;
+      width: calc(100% - 40px);
+    }
+  }
 }
 
 #news {
   background-color: #f1f1f1;
   padding: 40px;
 
+  @media screen and (max-width: 599px) {
+    padding: 30px 20px;
+  }
+
   .d_flex {
     justify-content: space-between;
 
     .item {
       width: calc(33% - 18px);
+      position: relative;
+      @media screen and (max-width: 599px) {
+        width: 100%;
+        padding-left: 110px;
+        margin-bottom: 70px;
+        .img_wrapper {
+          position: absolute;
+          left: 0;
+          img {
+            height: 90px;
+          }
+        }
+      }
     }
   }
 }
@@ -826,7 +1014,7 @@ button {
   padding: 40px;
 
   .W1200 {
-    >.d_flex {
+    > .d_flex {
       justify-content: space-between;
     }
   }
@@ -967,6 +1155,7 @@ button {
             -moz-transform: rotate(-180deg);
             -ms-transform: rotate(-180deg);
             -o-transform: rotate(-180deg);
+            transition: all 0.3s;
 
             &.active {
               transform: rotate(0);
@@ -999,7 +1188,6 @@ button {
                 background-color: #44bbc0;
               }
             }
-
           }
 
           &.show {
@@ -1015,7 +1203,7 @@ button {
           text-indent: -25px;
 
           &:after {
-            content: '';
+            content: "";
             position: absolute;
             display: block;
             height: 19px;
@@ -1063,7 +1251,6 @@ button {
         margin-left: 0;
         cursor: pointer;
 
-
         &:checked {
           &:after {
             content: "";
@@ -1105,11 +1292,11 @@ button {
   }
 
   .f16 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .f18 {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
 
   .f22 {
@@ -1146,6 +1333,9 @@ button {
 }
 
 @media screen and (max-width: 599px) {
+  .f12 {
+    font-size: 11px !important;
+  }
   .f14 {
     font-size: 13px !important;
   }
