@@ -104,6 +104,13 @@ const index = {
       $(".fake_select").find("img").removeClass("active");
     });
   },
+  adHandler: function () {
+    index.$body.on("click", ".ad_close", function (e) {
+      e.stopPropagation();
+      $(this).parents("a").remove();
+      return false;
+    });
+  },
 };
 
 $(function () {
@@ -111,4 +118,5 @@ $(function () {
   index.navHandler();
   index.anchorHandler();
   index.lbHandler();
+  index.adHandler();
 });
