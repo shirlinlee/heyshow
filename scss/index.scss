@@ -1,14 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@500&display=swap");
 
-// @font-face {
-//   font-family: "futura bt";
-//   src: url("../fonts/futura medium bt.ttf");
-// }
-
-// @font-face {
-//   font-family: "toppan";
-//   src: url("../fonts/ToppanBunkyuMinchoPr6N-Regular.otf");
-// }
+@font-face {
+  font-family: "public";
+  src: url("../fonts/PublicSans-Regular.otf");
+}
 
 body,
 html {
@@ -220,6 +215,7 @@ button {
   h5 {
     font-size: 32px;
     padding-bottom: 12px;
+    font-family: "public";
 
     @media screen and (max-width: 599px) {
       font-size: 23px;
@@ -245,6 +241,7 @@ button {
 }
 
 .more_btn {
+  font-family: "public";
   display: inline-block;
   width: 150px;
   padding: 5px 20px;
@@ -308,12 +305,10 @@ button {
       width: 100%;
       padding: 60px 35px 30px;
       background: rgb(0, 0, 0);
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1) 40%,
-        rgba(0, 0, 0, 0)
-      );
+      background: linear-gradient(0deg,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 1) 40%,
+          rgba(0, 0, 0, 0));
 
       @media screen and (max-width: 999px) {
         padding: 40px 25px 20px;
@@ -613,8 +608,7 @@ button {
         }
       }
 
-      &:hover {
-      }
+      &:hover {}
 
       p {
         font-size: 14px;
@@ -742,6 +736,8 @@ button {
   }
 
   p {
+    font-family: "public";
+
     @media screen and (max-width: 599px) {
       font-size: 14px;
     }
@@ -758,6 +754,7 @@ button {
   .copy_right {
     margin: 45px auto;
     line-height: 1.8;
+    font-family: "public";
 
     @media screen and (max-width: 599px) {
       margin: 25px auto;
@@ -804,7 +801,7 @@ button {
     padding-top: 120px;
   }
 
-  > div {
+  >div {
     padding-left: 40px;
     padding-right: 40px;
 
@@ -865,11 +862,15 @@ button {
       color: #44bbc1;
     }
 
+    span {
+      font-family: "public";
+    }
+
     @media screen and (max-width: 599px) {
       color: #44bbc1;
       border: none !important;
       width: 100px;
-      padding: 0 0 3px 0;
+      padding: 2px 0;
       line-height: 28px;
       margin-bottom: 5px;
       text-align: center;
@@ -961,7 +962,7 @@ button {
   padding-bottom: 40px;
   position: relative;
 
-  > .d_flex {
+  >.d_flex {
     justify-content: space-between;
 
     .sec_left {
@@ -1093,6 +1094,7 @@ button {
 
         &:after {
           content: "MORE";
+          font-family: "public";
           position: absolute;
           right: 0;
           bottom: 18px;
@@ -1122,7 +1124,7 @@ button {
   }
 
   .W1200 {
-    > .d_flex {
+    >.d_flex {
       justify-content: space-between;
     }
   }
@@ -1163,7 +1165,8 @@ button {
     padding: 0 18px;
 
     p {
-      display: none;
+      padding-top: 10px;
+      line-height: 1.5;
     }
 
     @media screen and (max-width: 599px) {
@@ -1187,11 +1190,7 @@ button {
         padding: 15px 20px 30px;
       }
 
-      p {
-        display: -webkit-box;
-        padding-left: 0;
-        padding-top: 10px;
-      }
+
     }
   }
 }

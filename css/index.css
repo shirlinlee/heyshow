@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@500&display=swap");
+@font-face {
+  font-family: "public";
+  src: url("../fonts/PublicSans-Regular.otf");
+}
+
 body,
 html {
   width: 100%;
@@ -217,6 +222,7 @@ button {
 .title h5 {
   font-size: 32px;
   padding-bottom: 12px;
+  font-family: "public";
 }
 
 @media screen and (max-width: 599px) {
@@ -247,6 +253,7 @@ button {
 }
 
 .more_btn {
+  font-family: "public";
   display: inline-block;
   width: 150px;
   padding: 5px 20px;
@@ -772,6 +779,10 @@ button {
   }
 }
 
+#footer p {
+  font-family: "public";
+}
+
 @media screen and (max-width: 599px) {
   #footer p {
     font-size: 14px;
@@ -791,6 +802,7 @@ button {
 #footer .copy_right {
   margin: 45px auto;
   line-height: 1.8;
+  font-family: "public";
 }
 
 @media screen and (max-width: 599px) {
@@ -910,12 +922,16 @@ button {
   color: #44bbc1;
 }
 
+#tab li span {
+  font-family: "public";
+}
+
 @media screen and (max-width: 599px) {
   #tab li {
     color: #44bbc1;
     border: none !important;
     width: 100px;
-    padding: 0 0 3px 0;
+    padding: 2px 0;
     line-height: 28px;
     margin-bottom: 5px;
     text-align: center;
@@ -1173,6 +1189,7 @@ button {
   }
   #news .d_flex .item:after {
     content: "MORE";
+    font-family: "public";
     position: absolute;
     right: 0;
     bottom: 18px;
@@ -1247,7 +1264,8 @@ button {
 }
 
 #shop .item p {
-  display: none;
+  padding-top: 10px;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 599px) {
@@ -1268,11 +1286,6 @@ button {
   #shop .item .W100 {
     background-color: #fff;
     padding: 15px 20px 30px;
-  }
-  #shop .item p {
-    display: -webkit-box;
-    padding-left: 0;
-    padding-top: 10px;
   }
 }
 
