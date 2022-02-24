@@ -369,6 +369,10 @@ button {
   -moz-transition: all .3s;
   -ms-transition: all .3s;
   -o-transition: all .3s;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 599px) {

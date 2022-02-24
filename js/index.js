@@ -53,7 +53,7 @@ const index = {
           {
             scrollTop: $(`#${anchor}`).offset().top - scrollTop,
           },
-          700
+          700,
         );
       }
     });
