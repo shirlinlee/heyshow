@@ -343,13 +343,27 @@ button {
     }
   }
 
+  @media screen and (max-width: 599px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .txt_wrapper {
+    @media screen and (max-width: 599px) {
+      width: 70%;
+      padding-left: 20px;
+    }
+  }
+
   .img_wrapper {
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
 
     @media screen and (max-width: 599px) {
-      padding-left: 95px;
+      width: 30%;
+      margin-bottom: 0;
     }
 
     img {
@@ -365,11 +379,14 @@ button {
       background-repeat: no-repeat;
 
       @media screen and(max-width: 599px) {
-        width: 90px;
-        height: 115px;
-        position: absolute;
-        left: 0;
-        top: 0;
+
+        // width: 90px;
+        // height: 115px;
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+        height: 100%;
+
       }
     }
 
@@ -389,10 +406,7 @@ button {
       }
 
       @media screen and (max-width: 599px) {
-        position: relative;
-        padding: 0 0 0 10px;
-        background: none;
-        color: #000;
+        display: none;
       }
 
       h6 {
@@ -418,6 +432,8 @@ button {
   }
 
   h6 {
+    width: 100%;
+    margin-top: 8px;
     font-family: "Noto Serif TC", serif;
     transition: all .3s;
     -webkit-transition: all .3s;
@@ -431,7 +447,6 @@ button {
 
     @media screen and (max-width: 599px) {
       padding-top: 5px;
-      padding-left: 105px;
       line-height: 1.5;
     }
   }
@@ -472,6 +487,7 @@ button {
       border-top: 2px solid #000;
       margin-top: 15px;
       padding-top: 20px;
+      width: 100%;
 
       .tr {
         margin-bottom: 15px;
@@ -1160,6 +1176,17 @@ button {
     }
   }
 
+  .item {
+    .txt_wrapper {
+
+      *:not(p) {
+        @media screen and (min-width: 600px) {
+          display: none;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 999px) {
     padding-top: 150px;
 
@@ -1199,15 +1226,13 @@ button {
 
       @media screen and (max-width: 599px) {
         width: 100%;
-        padding-left: 110px;
-        padding-bottom: 30px;
-        margin-bottom: 60px;
 
         .img_wrapper {
-          position: absolute;
-          left: 0;
-          height: 90px;
+          width: 40%;
+        }
 
+        .txt_wrapper {
+          width: 60%;
         }
 
         &:after {
@@ -1258,6 +1283,8 @@ button {
 
       .img_wrapper {
         padding: 0;
+        width: 100%;
+        margin-bottom: 10px;
 
         img {
           width: 100%;

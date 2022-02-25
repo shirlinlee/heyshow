@@ -350,6 +350,26 @@ button {
   }
 }
 
+@media screen and (max-width: 599px) {
+  .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .item .txt_wrapper {
+    width: 70%;
+    padding-left: 20px;
+  }
+}
+
 .item .img_wrapper {
   position: relative;
   overflow: hidden;
@@ -358,7 +378,8 @@ button {
 
 @media screen and (max-width: 599px) {
   .item .img_wrapper {
-    padding-left: 95px;
+    width: 30%;
+    margin-bottom: 0;
   }
 }
 
@@ -377,11 +398,7 @@ button {
 
 @media screen and (max-width: 599px) {
   .item .img_wrapper img {
-    width: 90px;
-    height: 115px;
-    position: absolute;
-    left: 0;
-    top: 0;
+    height: 100%;
   }
 }
 
@@ -403,10 +420,7 @@ button {
 
 @media screen and (max-width: 599px) {
   .item .img_wrapper .poA {
-    position: relative;
-    padding: 0 0 0 10px;
-    background: none;
-    color: #000;
+    display: none;
   }
 }
 
@@ -433,6 +447,8 @@ button {
 }
 
 .item h6 {
+  width: 100%;
+  margin-top: 8px;
   font-family: "Noto Serif TC", serif;
   transition: all .3s;
   -webkit-transition: all .3s;
@@ -448,7 +464,6 @@ button {
 @media screen and (max-width: 599px) {
   .item p {
     padding-top: 5px;
-    padding-left: 105px;
     line-height: 1.5;
   }
 }
@@ -486,6 +501,7 @@ button {
   border-top: 2px solid #000;
   margin-top: 15px;
   padding-top: 20px;
+  width: 100%;
 }
 
 .item.detail_show .detail .tr {
@@ -1237,6 +1253,12 @@ button {
   }
 }
 
+@media screen and (min-width: 600px) {
+  #features .item .txt_wrapper *:not(p) {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 999px) {
   #features {
     padding-top: 150px;
@@ -1285,14 +1307,12 @@ button {
 @media screen and (max-width: 599px) {
   #news .d_flex .item {
     width: 100%;
-    padding-left: 110px;
-    padding-bottom: 30px;
-    margin-bottom: 60px;
   }
   #news .d_flex .item .img_wrapper {
-    position: absolute;
-    left: 0;
-    height: 90px;
+    width: 40%;
+  }
+  #news .d_flex .item .txt_wrapper {
+    width: 60%;
   }
   #news .d_flex .item:after {
     content: "MORE";
@@ -1347,6 +1367,8 @@ button {
   }
   #events .item .img_wrapper {
     padding: 0;
+    width: 100%;
+    margin-bottom: 10px;
   }
   #events .item .img_wrapper img {
     width: 100%;
