@@ -265,8 +265,8 @@ button {
   color: #000;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4), inset 2px 2px 5px 0px rgba(0, 0, 0, 0.4), 1px 1px 3px 0px rgba(0, 0, 0, 0.4);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media screen and (min-width: 769px) {
@@ -288,7 +288,7 @@ button {
 }
 
 .ad_close:before, .ad_close:after {
-  content: '';
+  content: "";
   display: block;
   width: 1px;
   height: 20px;
@@ -385,11 +385,11 @@ button {
 
 .item .img_wrapper img {
   width: 100%;
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   background-size: cover;
   background-position: center;
   background-color: black;
@@ -450,11 +450,11 @@ button {
   width: 100%;
   margin-top: 8px;
   font-family: "Noto Serif TC", serif;
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 
 .item p {
@@ -1432,9 +1432,9 @@ button {
 }
 
 #banner_footer .d_flex {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #banner_footer .d_flex a {
@@ -1449,6 +1449,10 @@ button {
   #banner_footer .d_flex a:last-child {
     margin-bottom: 0;
   }
+}
+
+#banner_footer .d_flex a.pc:nth-child(2) {
+  margin-left: 20px;
 }
 
 #banner_footer .d_flex a img {
